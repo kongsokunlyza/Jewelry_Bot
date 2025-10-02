@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en"
+	xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org">
+
+<head th:replace = "~{base::head}"></head>
+<body>
+    <!-- Navbar Start -->
+     <div th:replace ="~{base::navbar(menu='active')}"></div>
+    <!-- Navbar End -->
+
+	<!-- Page Header Start -->
+    <div th:replace= "~{base::header(text='Menu')}"></div>
+    <!-- Page Header End -->
+	
+    
+
+    <!-- Menu Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Menu & Pricing</h4>
+                <h1 class="display-4">Competitive Pricing</h1>
+            </div>
+             <div class="row">
+                <div class="col-lg-6">
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-1.jpg" alt="">
+                            <h5 class="menu-price">$85</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Pink Crystal Bracelet</h4>
+                            <p class="m-0">Delicate pink crystal bracelet, perfect for everyday elegance.</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-2.jpg" alt="">
+                            <h5 class="menu-price">$47</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Heart Crystal Ring</h4>
+                            <p class="m-0">Silver ring with twin pink heart-shaped crystals for a romantic touch.</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-3.jpg" alt="">
+                            <h5 class="menu-price">$99</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Pearl & Crystal Bracelet</h4>
+                            <p class="m-0">A blend of pearls and pink crystals, offering timeless charm.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-4.jpg" alt="">
+                            <h5 class="menu-price">$55</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Teardrop Crystal Earrings</h4>
+                            <p class="m-0">Sparkling pink teardrop earrings set in silver for a graceful look.</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-5.jpg" alt="">
+                            <h5 class="menu-price">$67</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Double Crystal Bracelet Set</h4>
+                            <p class="m-0">Matching bracelet duo with golden accents and pink stones.</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-6.jpg" alt="">
+                            <h5 class="menu-price">$69</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Butterfly Crystal Ring</h4>
+                            <p class="m-0">Gold ring adorned with a butterfly design and pink gemstones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu End -->
+
+
+    <!-- Footer Start -->
+    <div th:replace= "~{base::footer}"> </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+   	<div th:replace ="~{base::script}"></div>
+</body>
+
+</html>

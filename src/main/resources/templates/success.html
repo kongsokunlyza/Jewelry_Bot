@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org">
+
+
+<head th:replace = "~{base::head}"></head>
+
+<body>
+    <!-- Navbar Start -->
+    <div th:replace="~{base::navbar(about='active')}"></div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div th:replace= "~{base::header(text='Success')}"></div>
+    <!-- Page Header End -->
+
+
+    <!-- Success Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+          <h3>Success Booked</h3> 
+              <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <th>ID</th>
+                    <td th:text="${booked.id}">ID</td>
+                </tr>
+                
+                 <tr>
+                    <th>Name</th>
+                    <td th:text="${booked.name}">Name</td>
+                </tr>
+                <tr>
+                    <th>Phone Number</th>
+                    <td th:text="${booked.phoneNumber}">Phone</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td th:text="${booked.email}">Email</td>
+                </tr>
+                <tr>
+                    <th>Date</th>
+                    <td th:text="${booked.date}">Date</td>
+                </tr>
+                <tr>
+                    <th>Time</th>
+                    <td th:text="${booked.time}">Time</td>
+                </tr>
+                <tr>
+                    <th>Persons</th>
+                    <td th:text="${booked.person}">Person</td>
+                </tr>
+            </tbody>
+        </table>  
+    	</div>
+    </div>
+    <!-- Success End -->
+    
+    <!-- Footer Start -->
+    <div th:replace= "~{base::footer}"> </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <div th:replace ="~{base::script}"></div>
+</body>
+
+</html>

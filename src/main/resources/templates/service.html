@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"
+xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org">
+
+<head th:replace = "~{base::head}"></head>
+<body>
+    <!-- Navbar Start -->
+     <div th:replace ="~{base::navbar(service='active')}"></div>
+    <!-- Navbar End -->
+
+	<!-- Page Header Start -->
+    <div th:replace= "~{base::header(text='Services')}"></div>
+    <!-- Page Header End -->
+	
+   
+
+
+    <!-- Service Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Services</h4>
+                <h1 class="display-4">Jewelry Services</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-1.jpg" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                            <h4><i class=""></i>Custom Design Service</h4>
+                            <p class="m-0">Create a one-of-a-kind piece tailored to your style and story. From concept sketches to finished jewelry, we bring your vision to life.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-2.jpg" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                            <h4><i class=""></i>Jewelry Repair</h4>
+                            <p class="m-0">Professional repair for broken clasps, resizing rings, polishing, and restoring vintage pieces to their original beauty.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-3.jpg" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                            <h4><i class=""></i>Maintenance</h4>
+                            <p class="m-0">Keep your jewelry shining with our expert cleaning, gemstone inspection, and protective maintenance service.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-4.jpg" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                            <h4><i class=""></i>Personalized Gift Wrapping</h4>
+                            <p class="m-0">Elegant packaging with customization options, perfect for birthdays, anniversaries, and special surprises.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Footer Start -->
+    <div th:replace= "~{base::footer}"> </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <div th:replace ="~{base::script}"></div>
+</body>
+
+</html>
